@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 ###################################################################################
 # License: GPU General Public License. 
 # License details here: http://www.gnu.org/licenses/gpl.html
@@ -66,7 +68,7 @@ sub moveOldBackups {
 
     my $cmd = join(';',@commands);
 
-    print("$ssh $login \"$cmd\" 2>&1");
+    system("$ssh $login \"$cmd\" 2>&1");
 }
 
 #  Copies the local dir and preserves the folder structure onto the mirroring host
