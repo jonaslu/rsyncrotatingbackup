@@ -1,7 +1,7 @@
 # Short description
 Its a script that does rotational backups on your folders of choice. No compression involved - the files are mirrored onto the backup machine and hard links keeps redundancy down between snapshots. Done in perl via ssh and rsync (sshd  needs to be installed on the backup machine, ssh keys are optional but very handy if you automate it with cron / anacron).
 
-For more background and running it via anacron - check the accompanying longer blog post [http://www.catchmecode.com/blog/2013/06/01/rotating-backups-with-rsync/](http://www.catchmecode.com/blog/2013/06/01/rotating-backups-with-rsync/)
+For more background and running it via anacron - check the accompanying longer blog post [https://www.iamjonas.me/2013/06/rotating-backups-with-rsync.html](https://www.iamjonas.me/2013/06/rotating-backups-with-rsync.html)
 
 # Script config
 There are a couple of variables you should change - they're marked with a huge # Config part - edit these header at the top of the script.
