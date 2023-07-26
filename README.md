@@ -37,7 +37,7 @@ Will back up all files recursively in the home Desktop and Pictures folder. The 
 /home/storage/backup/user/client/backup_1/home/user/Desktop
 /home/storage/backup/user/client/backup_1/home/user/Pictures
 ```
-#Optional config
+# Optional config
 You might have to change these, they'll try to find the executable by themselves (via [which](http://linux.die.net/man/1/which)) but if they don't succeed - feed them the location of the binary:
 ```perl
 my $rsyncCmd = `which rsync`;
